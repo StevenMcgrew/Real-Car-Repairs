@@ -2,26 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="icon" href="path/to/fav.png">
+    <title>Real Car Repairs</title>
 
     <!-- Halfmoon CSS -->
     <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="styles.css">
 
-    <title>Real Car Repairs</title>
 </head>
 
-<body>
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars"
+      data-dm-shortcut-enabled="true"
+      data-sidebar-shortcut-enabled="true"
+      data-set-preferred-mode-onload="true">
 
+    <!-- Modal -->
+    <div class="modal" id="modal-1" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </a>
+                <h5 class="modal-title">Modal title</h5>
+                <p>
+                    This is the modal content. Almost any type of content can be presented to the user here.
+                </p>
+                <div class="text-right mt-20">
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="#" class="btn btn-primary" role="button">Okay</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Page wrapper -->
+    <div class="page-wrapper with-navbar with-sidebar"
+         data-sidebar-type="full-height overlayed-sm-and-down">
+
+        <!-- Toasts -->
+        <div class="sticky-alerts"></div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            
+        </nav>
+
+        <!-- Sidebar overlay -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            
+        </div>
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+
+        </div>
+
+    </div>
 
     <!-- Halfmoon JS -->
     <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
-    <!-- Initialization for Halfmoon -->
-    <script>window.addEventListener('DOMContentLoaded', () => { halfmoon.onDOMContentLoaded() })</script>
-    
+
     <script src="scripts.js"></script>
 </body>
 
