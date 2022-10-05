@@ -1,0 +1,31 @@
+:root {
+    --sidebar-overlay-bg-color: rgba(0, 0, 0, 0.5);
+    --navbar-brand-image-height: 4rem;
+    --navbar-brand-font-size: 2.5rem;
+    --navbar-brand-image-margin-right: 0.4rem;
+}
+
+/* Fix text vertical alignment (issue with Halfmoon) */
+.btn {
+    line-height: 2.9rem;
+}
+
+.btn-action {
+    width: 3.6rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.brand-text {
+    font-family: 'Secular One', sans-serif;
+}
+
+.page-wrapper.with-sidebar[data-sidebar-type~=overlayed-all]>.sidebar, .sidebar-overlay {
+    top: var(--navbar-height);
+}
+
+footer {
+    background-color: #383838;
+    color: white;
+    padding: 1rem;
+}
