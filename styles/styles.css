@@ -8,7 +8,10 @@
     --dm-base-body-bg-color: #2d2d2d;
     --dm-sidebar-bg-color: var(--dm-navbar-bg-color);
     --lm-sidebar-box-shadow: 0 0 15px rgb(0 0 0 / 75%);
-    --dm-sidebar-box-shadow: var(--lm-sidebar-box-shadow)
+    --dm-sidebar-box-shadow: var(--lm-sidebar-box-shadow);
+    --navbar-height: 5.6rem;
+
+    --mini-sidebar-width: 7rem;
 }
 
 /* Fix text vertical alignment (issue with Halfmoon) */
@@ -16,10 +19,8 @@
     line-height: 2.9rem;
 }
 
-.btn-action {
-    width: 3.6rem;
-    padding-left: 0;
-    padding-right: 0;
+.main-brand-box {
+    padding-left: 6.2rem;
 }
 
 .brand-text {
@@ -36,18 +37,38 @@
 }
 
 .mini-sidebar {
-    width: 6.3rem;
+    top: 0;
+    width: var(--mini-sidebar-width);
     overflow-x: hidden;
+    z-index: 40;
+}
+
+.mini-sidebar-btns {
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 0;
+    border: none;
+    font-size: 1rem;
+}
+
+.mini-sidebar-btns i {
+    font-size: 2rem;
+}
+
+.toggle-sidebar-btn {
+    height: var(--navbar-height);
 }
 
 .sidebar {
-    border: none;
+    border: var(--navbar-border-width) solid var(--lm-navbar-border-color);
     clip-path: inset(0px -20px 0px 0px);
+    margin-top: -0.1rem;
 }
 
 main {
-    margin-left: 6.3rem; /* Same as the width of the mini-sidebar */
+    margin-left: var(--mini-sidebar-width);
     min-height: 100%;
+    border-left: var(--navbar-border-width) solid var(--lm-navbar-border-color);
 }
 
 .navbar-text {
