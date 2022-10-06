@@ -1,8 +1,13 @@
 :root {
-    --sidebar-overlay-bg-color: rgba(0, 0, 0, 0.5);
+    --sidebar-overlay-bg-color: rgba(0, 0, 0, 0.25);
     --navbar-brand-image-height: 4rem;
     --navbar-brand-font-size: 2.5rem;
     --navbar-brand-image-margin-right: 0.4rem;
+    --dm-navbar-bg-color: #393939;
+    --dm-base-body-bg-color: #2d2d2d;
+    --dm-sidebar-bg-color: var(--dm-navbar-bg-color);
+    --lm-sidebar-box-shadow: 0 0 15px rgb(0 0 0 / 75%);
+    --dm-sidebar-box-shadow: var(--lm-sidebar-box-shadow)
 }
 
 /* Fix text vertical alignment (issue with Halfmoon) */
@@ -24,8 +29,34 @@
     top: var(--navbar-height);
 }
 
+.user-icon-container {
+    width: 2rem;
+    height: 2rem;
+}
+
+.mini-sidebar {
+    width: 6.3rem;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    border: none;
+    clip-path: inset(0px -20px 0px 0px);
+}
+
+main {
+    margin-left: 6.3rem; /* Same as the width of the mini-sidebar */
+    min-height: 100%;
+}
+
+.navbar-text {
+    gap: 0.5rem;
+}
+
 footer {
-    background-color: #383838;
-    color: white;
-    padding: 1rem;
+    height: max-content!important;
+}
+
+footer p {
+    margin: 0!important;
 }
