@@ -4,6 +4,7 @@
     --navbar-brand-font-size: 2.5rem;
     --navbar-brand-image-margin-right: 0.4rem;
     --dm-navbar-bg-color: #393939;
+    --lm-base-body-bg-color: #f9f9f9;
     --dm-base-body-bg-color: #2d2d2d;
     --dm-sidebar-bg-color: var(--dm-navbar-bg-color);
     --lm-sidebar-box-shadow: 0 0 15px rgb(0 0 0 / 75%);
