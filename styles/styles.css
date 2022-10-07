@@ -9,9 +9,9 @@
     --dm-sidebar-bg-color: var(--dm-navbar-bg-color);
     --lm-sidebar-box-shadow: 0 0 15px rgb(0 0 0 / 75%);
     --dm-sidebar-box-shadow: var(--lm-sidebar-box-shadow);
-    --navbar-height: 5.6rem;
+    /* --navbar-height: 5rem; */
 
-    --mini-sidebar-width: 7rem;
+    --mini-sidebar-width: 7.2rem;
 }
 
 /* Fix text vertical alignment (issue with Halfmoon) */
@@ -19,21 +19,18 @@
     line-height: 2.9rem;
 }
 
-.main-brand-box {
-    padding-left: 6.2rem;
-}
-
 .brand-text {
     font-family: 'Secular One', sans-serif;
 }
 
-.page-wrapper.with-sidebar[data-sidebar-type~=overlayed-all]>.sidebar, .sidebar-overlay {
-    top: var(--navbar-height);
+.round-account-btn {
+    padding-top: 2px;
+    height: 34px;
+    width: 35px;
 }
 
-.user-icon-container {
-    width: 2rem;
-    height: 2rem;
+.page-wrapper.with-sidebar[data-sidebar-type~=overlayed-all]>.sidebar, .sidebar-overlay {
+    top: var(--navbar-height);
 }
 
 .mini-sidebar {
@@ -44,19 +41,20 @@
 }
 
 .mini-sidebar-btns {
-    width: 7.2rem;
-    height: 7.2rem;
+    width: var(--mini-sidebar-width);
+    height: var(--mini-sidebar-width);
     border-radius: 0;
     border: none;
     font-size: 1rem;
 }
 
-.mini-sidebar-btns i {
-    font-size: 2rem;
-}
-
 .toggle-sidebar-btn {
     height: var(--navbar-height);
+}
+
+.nav-sidebar-btn {
+    height: 4.8rem;
+    padding-top: 0.2rem !important;
 }
 
 .sidebar {
@@ -76,9 +74,25 @@ main {
 }
 
 footer {
-    height: max-content!important;
+    height: max-content !important;
 }
 
 footer p {
-    margin: 0!important;
+    margin: 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+
+    main {
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .brand-text {
+        display: none;
+    }
+
 }
