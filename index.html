@@ -28,6 +28,7 @@
       data-sidebar-shortcut-enabled="true"
       data-set-preferred-mode-onload="true">
 
+    <!-- Modal -->
     <div class="modal" id="modal-1" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -47,9 +48,10 @@
     </div>
 
     <!-- Page wrapper -->
-    <div class="page-wrapper with-navbar with-sidebar"
+    <div class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom"
          data-sidebar-type="overlayed-all">
 
+        <!-- Toasts -->
         <div class="sticky-alerts"></div>
 
         <!-- Top navbar -->
@@ -73,6 +75,7 @@
             </a>
         </nav>
 
+        <!-- Sidebar overlay -->
         <div class="sidebar-overlay"></div>
 
         <!-- Sidebar -->
@@ -95,27 +98,63 @@
                 <a role="button" class="toggle-sidebar-btn mini-sidebar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
                     <i class="fa fa-bars font-size-20" aria-hidden="true"></i><span class="sr-only">Toggle sidebar</span>
                 </a>
-                <a role="button" class="mini-sidebar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
+
+                <a href="#" class="mini-sidebar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
                     <i class="fa fa-home font-size-20" aria-hidden="true"></i>
                     <span class="mt-5">Home</span>
                 </a>
-                <a role="button" class="mini-sidebar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
+
+                <a href="#" class="mini-sidebar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
                     <i class="fa fa-plus-square-o font-size-20" aria-hidden="true"></i>
                     <span class="mt-5">Create</span>
                 </a>
+
+                <a href="#" class="mini-sidebar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
+                    <i class="fa fa-history font-size-20" aria-hidden="true"></i>
+                    <span class="mt-5">History</span>
+                </a>
+
+                <a href="#" class="mini-sidebar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
+                    <i class="fa fa-archive font-size-20" aria-hidden="true"></i>
+                    <span class="mt-5">Library</span>
+                </a>
             </div>
 
+            <!-- Main content -->
             <main>
 
             </main>
 
-            <footer class="navbar navbar-static-bottom flex-column p-10 align-items-end">
-                <p class="navbar-text">&copy; 2022 Steven McGrew</p>
-                <p class="navbar-text">Brand logo by Icons8 <a href="https://icons8.com/">https://icons8.com/</a></p>
+            <footer class="d-flex flex-column p-10 align-items-end">
+                <p>&copy; 2022 Steven McGrew</p>
+                <p>Brand logo by Icons8 <a href="https://icons8.com/">https://icons8.com/</a></p>
             </footer>
 
 
         </div>
+
+        <!-- Bottom navbar -->
+        <nav class="d-sm-none navbar navbar-fixed-bottom justify-content-around">
+            <a href="" class="bottom-navbar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
+                <i class="fa fa-home font-size-20" aria-hidden="true"></i>
+                <span class="mt-5">Home</span>
+            </a>
+
+            <a href="" class="bottom-navbar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
+                <i class="fa fa-plus-square-o font-size-20" aria-hidden="true"></i>
+                <span class="mt-5">Create</span>
+            </a>
+
+            <a href="" class="bottom-navbar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
+                <i class="fa fa-history font-size-20" aria-hidden="true"></i>
+                <span class="mt-5">History</span>
+            </a>
+
+            <a href="" class="bottom-navbar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
+                <i class="fa fa-archive font-size-20" aria-hidden="true"></i>
+                <span class="mt-5">Library</span>
+            </a>
+        </nav>
 
     </div>
 
