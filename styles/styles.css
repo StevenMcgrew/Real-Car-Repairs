@@ -4,8 +4,7 @@
     --navbar-brand-font-size: 2.5rem;
     --navbar-brand-image-margin-right: 0.4rem;
     --dm-navbar-bg-color: #393939;
-    --lm-base-body-bg-color: #f9f9f9;
-    --dm-base-body-bg-color: #2d2d2d;
+    --dm-base-body-bg-color: var(--dark-color);
     --dm-sidebar-bg-color: var(--dm-navbar-bg-color);
     --lm-sidebar-box-shadow: 0 0 15px rgb(0 0 0 / 75%);
     --dm-sidebar-box-shadow: var(--lm-sidebar-box-shadow);
@@ -17,9 +16,6 @@
     --dm-link-badge-bg-color-hover: rgba(255, 255, 255, 0.05);
     --lm-sidebar-link-bg-color-hover: var(--lm-link-badge-bg-color-hover);
     --dm-sidebar-link-bg-color-hover: var(--dm-link-badge-bg-color-hover);
-
-
-    /* --navbar-height: 5rem; */
 
     --mini-sidebar-width: 7.2rem;
 }
@@ -82,6 +78,10 @@
     margin-top: -0.1rem;
 }
 
+.sidebar-menu {
+    margin-top: 1rem;
+}
+
 .sidebar-footer {
     font-size: 1rem;
 }
@@ -95,6 +95,48 @@ main {
     min-height: 100%;
     border-left: var(--navbar-border-width) solid var(--lm-navbar-border-color);
     overflow-x: hidden;
+}
+
+.row.row-eq-spacing {
+    margin: 0;
+}
+
+.row.row-eq-spacing, .row.row-eq-spacing>[class^=col] {
+    padding: 1rem; /* sets an equal gap around flex items including outer edges*/
+}
+
+.card-details-box :is(h5, h6) {
+    margin: 0;
+}
+
+.card-details-box h5 {
+    line-height: 1.7rem;
+}
+
+.card-details-box h5 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.5rem;
+}
+
+.card-user-icon {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    margin-top: 2px;
+}
+
+.card-user-icon i {
+    margin-left: 1px;
+    margin-bottom: 2px;
+}
+
+.card-user-details p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.8rem;
 }
 
 .navbar-text {
