@@ -9,6 +9,16 @@
     --dm-sidebar-bg-color: var(--dm-navbar-bg-color);
     --lm-sidebar-box-shadow: 0 0 15px rgb(0 0 0 / 75%);
     --dm-sidebar-box-shadow: var(--lm-sidebar-box-shadow);
+    --dm-horizontal-rule-color: rgba(255, 255, 255, 0.25);
+    --lm-horizontal-rule-color: rgba(0, 0, 0, 0.25);
+    --lm-base-text-color-light: rgba(0, 0, 0, 0.85);
+    --dm-base-text-color-light: rgba(255, 255, 255, 0.8);
+    --lm-link-badge-bg-color-hover: rgba(0, 0, 0, 0.05);
+    --dm-link-badge-bg-color-hover: rgba(255, 255, 255, 0.05);
+    --lm-sidebar-link-bg-color-hover: var(--lm-link-badge-bg-color-hover);
+    --dm-sidebar-link-bg-color-hover: var(--dm-link-badge-bg-color-hover);
+
+
     /* --navbar-height: 5rem; */
 
     --mini-sidebar-width: 7.2rem;
@@ -66,15 +76,25 @@
 }
 
 .sidebar {
+    height: calc(100% - var(--navbar-height)) !important;
     border: var(--navbar-border-width) solid var(--lm-navbar-border-color);
     clip-path: inset(0px -20px 0px 0px);
     margin-top: -0.1rem;
+}
+
+.sidebar-footer {
+    font-size: 1rem;
+}
+
+.badge {
+    margin-bottom: 0.2rem;
 }
 
 main {
     margin-left: var(--mini-sidebar-width);
     min-height: 100%;
     border-left: var(--navbar-border-width) solid var(--lm-navbar-border-color);
+    overflow-x: hidden;
 }
 
 .navbar-text {
