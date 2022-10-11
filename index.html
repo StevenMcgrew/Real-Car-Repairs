@@ -65,14 +65,63 @@
                 <span class="brand-text">Real Car Repairs</span>
             </a>
 
-            <button class="btn btn-primary align-items-center ml-auto d-none d-sm-flex" aria-label="User account options" type="button">
-                <span class="d-inline-block text-uppercase mr-15">Sign in</span>
-                <i class="fa fa-user font-size-20" aria-hidden="true"></i>
-            </button>
+            <div class="dropdown ml-auto d-none d-sm-flex">
+                <button class="btn btn-primary align-items-center" data-toggle="dropdown" type="button" id="sign-in-dropdown-toggle-btn" aria-haspopup="true" aria-expanded="false">
+                    <span class="d-inline-block text-uppercase mr-15">Sign in</span>
+                    <i class="fa fa-user font-size-20" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right w-250 w-sm-350" aria-labelledby="sign-in-dropdown-toggle-btn">
+                    <div class="dropdown-content p-20">
+                        <form action="..." method="...">
+                            <div class="form-group">
+                                <label for="username" class="required">Username</label>
+                                <input type="text" name="username" class="form-control" placeholder="Username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="required">Password</label>
+                                <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+                            </div>
+                            <input class="btn btn-primary btn-block" type="submit" value="Sign in">
+                            <div class="text-right mt-10">
+                                <a href="#" class="hyperlink">Forgot password?</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item text-center">Don't have an account? Sign up</a>
+                </div>
+            </div>
 
-            <a href="#" class="round-account-btn btn btn-square btn-primary rounded-circle ml-auto d-sm-none" role="button">
+            <!-- <a href="#" class="round-account-btn btn btn-square btn-primary rounded-circle ml-auto d-sm-none" role="button">
                 <i class="fa fa-user font-size-20" aria-hidden="true"></i><span class="sr-only">User account options</span>
-            </a>
+            </a> -->
+
+            <div class="dropdown ml-auto d-sm-none">
+                <button class="round-account-btn btn btn-square btn-primary rounded-circle" data-toggle="dropdown" type="button" id="sign-in-dropdown-toggle-btn" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user font-size-20" aria-hidden="true"></i><span class="sr-only">User account options</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right w-250 w-sm-350" aria-labelledby="sign-in-dropdown-toggle-btn">
+                    <div class="dropdown-content p-20">
+                        <form action="..." method="...">
+                            <div class="form-group">
+                                <label for="username" class="required">Username</label>
+                                <input type="text" name="username" class="form-control" placeholder="Username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="required">Password</label>
+                                <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+                            </div>
+                            <input class="btn btn-primary btn-block" type="submit" value="Sign in">
+                            <div class="text-right mt-10">
+                                <a href="#" class="hyperlink">Forgot password?</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item text-center">Don't have an account? Sign up</a>
+                </div>
+            </div>
+
         </nav>
 
         <!-- Sidebar overlay -->
@@ -192,9 +241,9 @@
                             <div class="card-wrapper">
                                 <a href="#" class="text-reset text-decoration-none">
                                     <div class="card-details-box pb-5">
-                                        <img src="images/1.jpg" class="img-fluid" alt="front steering knuckle with wheel bearing">
-                                        <h5>Front Steering Knuckle and Wheel Bearing</h5>
-                                        <h6>2013 Audi Q7 3.0L</h6>
+                                        <img src="images/1.jpg" class="img-fluid" alt="...">
+                                        <h5 class="text-truncate m-0 px-10">Front Steering Knuckle and Wheel Bearing</h5>
+                                        <h6 class="text-truncate m-0 px-10">2013 Audi Q7 3.0L</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="d-inline-block text-reset text-decoration-none px-10 pb-10">
@@ -215,19 +264,19 @@
                             <div class="card-wrapper">
                                 <a href="#" class="text-reset text-decoration-none">
                                     <div class="card-details-box pb-5">
-                                        <img src="images/1.jpg" class="img-fluid" alt="front steering knuckle with wheel bearing">
-                                        <h5>Front Steering Knuckle and Wheel Bearing</h5>
-                                        <h6>2013 Audi Q7 3.0L</h6>
+                                        <img src="images/2.jpg" class="img-fluid" alt="...">
+                                        <h5 class="text-truncate m-0 px-10">Transfer Case Actuator Motor</h5>
+                                        <h6 class="text-truncate m-0 px-10">2005 BMW X3 3.0L</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="d-inline-block text-reset text-decoration-none px-10 pb-10">
                                     <div class="d-flex align-items-center">
-                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(196, 28, 56);">
+                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(76, 140, 230);">
                                             <i class="fa fa-user font-size-20" aria-hidden="true"></i><span class="sr-only">User account</span>
                                         </div>
                                         <div class="card-user-details text-muted ml-10">
-                                            <p>pegasuspieskat</p>
-                                            <p>2 hours ago</p>
+                                            <p>NoddyCindy</p>
+                                            <p>4 months ago</p>
                                         </div>
                                     </div>
                                 </a>
@@ -238,19 +287,19 @@
                             <div class="card-wrapper">
                                 <a href="#" class="text-reset text-decoration-none">
                                     <div class="card-details-box pb-5">
-                                        <img src="images/1.jpg" class="img-fluid" alt="front steering knuckle with wheel bearing">
-                                        <h5>Front Steering Knuckle and Wheel Bearing</h5>
-                                        <h6>2013 Audi Q7 3.0L</h6>
+                                        <img src="images/3.jpg" class="img-fluid" alt="...">
+                                        <h5 class="text-truncate m-0 px-10">Valve Cover Gasket</h5>
+                                        <h6 class="text-truncate m-0 px-10">2005 Mercedes-Benz C230 1.8L</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="d-inline-block text-reset text-decoration-none px-10 pb-10">
                                     <div class="d-flex align-items-center">
-                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(196, 28, 56);">
+                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(230, 230, 76);">
                                             <i class="fa fa-user font-size-20" aria-hidden="true"></i><span class="sr-only">User account</span>
                                         </div>
                                         <div class="card-user-details text-muted ml-10">
-                                            <p>pegasuspieskat</p>
-                                            <p>2 hours ago</p>
+                                            <p>georgewreck</p>
+                                            <p>12 days ago</p>
                                         </div>
                                     </div>
                                 </a>
@@ -261,19 +310,19 @@
                             <div class="card-wrapper">
                                 <a href="#" class="text-reset text-decoration-none">
                                     <div class="card-details-box pb-5">
-                                        <img src="images/1.jpg" class="img-fluid" alt="front steering knuckle with wheel bearing">
-                                        <h5>Front Steering Knuckle and Wheel Bearing</h5>
-                                        <h6>2013 Audi Q7 3.0L</h6>
+                                        <img src="images/4.jpg" class="img-fluid" alt="...">
+                                        <h5 class="text-truncate m-0 px-10">Auxiliary Cooling Fan</h5>
+                                        <h6 class="text-truncate m-0 px-10">2003 Volkswagen Passat GLX 4Motion Wagon 2.8L</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="d-inline-block text-reset text-decoration-none px-10 pb-10">
                                     <div class="d-flex align-items-center">
-                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(196, 28, 56);">
+                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(76, 230, 150);">
                                             <i class="fa fa-user font-size-20" aria-hidden="true"></i><span class="sr-only">User account</span>
                                         </div>
                                         <div class="card-user-details text-muted ml-10">
-                                            <p>pegasuspieskat</p>
-                                            <p>2 hours ago</p>
+                                            <p>christine_tangerine</p>
+                                            <p>1 hour ago</p>
                                         </div>
                                     </div>
                                 </a>
@@ -284,19 +333,19 @@
                             <div class="card-wrapper">
                                 <a href="#" class="text-reset text-decoration-none">
                                     <div class="card-details-box pb-5">
-                                        <img src="images/1.jpg" class="img-fluid" alt="front steering knuckle with wheel bearing">
-                                        <h5>Front Steering Knuckle and Wheel Bearing</h5>
-                                        <h6>2013 Audi Q7 3.0L</h6>
+                                        <img src="images/5.jpg" class="img-fluid" alt="...">
+                                        <h5 class="text-truncate m-0 px-10">Steering Column Module</h5>
+                                        <h6 class="text-truncate m-0 px-10">2012 Mercedes-Benz ML350 3.0L</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="d-inline-block text-reset text-decoration-none px-10 pb-10">
                                     <div class="d-flex align-items-center">
-                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(196, 28, 56);">
+                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(197, 41, 202);">
                                             <i class="fa fa-user font-size-20" aria-hidden="true"></i><span class="sr-only">User account</span>
                                         </div>
                                         <div class="card-user-details text-muted ml-10">
-                                            <p>pegasuspieskat</p>
-                                            <p>2 hours ago</p>
+                                            <p>DannyWide</p>
+                                            <p>15 minutes ago</p>
                                         </div>
                                     </div>
                                 </a>
@@ -307,19 +356,19 @@
                             <div class="card-wrapper">
                                 <a href="#" class="text-reset text-decoration-none">
                                     <div class="card-details-box pb-5">
-                                        <img src="images/1.jpg" class="img-fluid" alt="front steering knuckle with wheel bearing">
-                                        <h5>Front Steering Knuckle and Wheel Bearing</h5>
-                                        <h6>2013 Audi Q7 3.0L</h6>
+                                        <img src="images/6.jpg" class="img-fluid" alt="...">
+                                        <h5 class="text-truncate m-0 px-10">Water Pump and Thermostat</h5>
+                                        <h6 class="text-truncate m-0 px-10">2012 Audi A5 Quattro 2.0L</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="d-inline-block text-reset text-decoration-none px-10 pb-10">
                                     <div class="d-flex align-items-center">
-                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(196, 28, 56);">
+                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(202, 105, 41);">
                                             <i class="fa fa-user font-size-20" aria-hidden="true"></i><span class="sr-only">User account</span>
                                         </div>
                                         <div class="card-user-details text-muted ml-10">
-                                            <p>pegasuspieskat</p>
-                                            <p>2 hours ago</p>
+                                            <p>TurtleBack</p>
+                                            <p>7 years ago</p>
                                         </div>
                                     </div>
                                 </a>
@@ -330,19 +379,42 @@
                             <div class="card-wrapper">
                                 <a href="#" class="text-reset text-decoration-none">
                                     <div class="card-details-box pb-5">
-                                        <img src="images/1.jpg" class="img-fluid" alt="front steering knuckle with wheel bearing">
-                                        <h5>Front Steering Knuckle and Wheel Bearing</h5>
-                                        <h6>2013 Audi Q7 3.0L</h6>
+                                        <img src="images/7.jpg" class="img-fluid" alt="...">
+                                        <h5 class="text-truncate m-0 px-10">Steering Column</h5>
+                                        <h6 class="text-truncate m-0 px-10">2004 MINI Cooper S 1.6L</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="d-inline-block text-reset text-decoration-none px-10 pb-10">
                                     <div class="d-flex align-items-center">
-                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(196, 28, 56);">
+                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(134, 134, 134);">
                                             <i class="fa fa-user font-size-20" aria-hidden="true"></i><span class="sr-only">User account</span>
                                         </div>
                                         <div class="card-user-details text-muted ml-10">
-                                            <p>pegasuspieskat</p>
-                                            <p>2 hours ago</p>
+                                            <p>wisdom_william</p>
+                                            <p>50 minutes ago</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card-wrapper">
+                                <a href="#" class="text-reset text-decoration-none">
+                                    <div class="card-details-box pb-5">
+                                        <img src="images/8.jpg" class="img-fluid" alt="...">
+                                        <h5 class="text-truncate m-0 px-10">Disconnect Lines from Steering Rack</h5>
+                                        <h6 class="text-truncate m-0 px-10">2007 BMW X3 3.0L</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="d-inline-block text-reset text-decoration-none px-10 pb-10">
+                                    <div class="d-flex align-items-center">
+                                        <div class="rounded-circle card-user-icon" style="background-color: rgb(243, 76, 193);">
+                                            <i class="fa fa-user font-size-20" aria-hidden="true"></i><span class="sr-only">User account</span>
+                                        </div>
+                                        <div class="card-user-details text-muted ml-10">
+                                            <p>fleetLindsey</p>
+                                            <p>9 months ago</p>
                                         </div>
                                     </div>
                                 </a>
