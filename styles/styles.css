@@ -1,12 +1,12 @@
 :root {
-    --sidebar-overlay-bg-color: rgba(0, 0, 0, 0.25);
+    --sidebar-overlay-bg-color: rgba(0, 0, 0, 0.5);
     --navbar-brand-image-height: 4rem;
     --navbar-brand-font-size: 2.5rem;
     --navbar-brand-image-margin-right: 0.4rem;
     --dm-navbar-bg-color: #393939;
-    --dm-base-body-bg-color: var(--dark-color);
+    --dm-base-body-bg-color: #262626;
     --dm-sidebar-bg-color: var(--dm-navbar-bg-color);
-    --lm-sidebar-box-shadow: 0 0 15px rgb(0 0 0 / 75%);
+    --lm-sidebar-box-shadow: 0 0 15px rgb(0, 0, 0, 0.75);
     --dm-sidebar-box-shadow: var(--lm-sidebar-box-shadow);
     --dm-horizontal-rule-color: rgba(255, 255, 255, 0.25);
     --lm-horizontal-rule-color: rgba(0, 0, 0, 0.25);
@@ -30,9 +30,9 @@
 }
 
 .round-account-btn {
-    padding-top: 2px;
-    height: 34px;
-    width: 35px;
+    padding-top: 0.2rem;
+    height: 3.4rem;
+    width: 3.5rem;
 }
 
 .page-wrapper.with-sidebar[data-sidebar-type~=overlayed-all]>.sidebar, .sidebar-overlay {
@@ -105,8 +105,18 @@ main {
     padding: 1rem; /* sets an equal gap around flex items including outer edges*/
 }
 
+.card-wrapper {
+    box-shadow: 0px 10px 20px -12px #b4b4b4;
+}
+
+.dark-mode .card-wrapper {
+    box-shadow: 0px 10px 20px -12px black;
+    background-color: #1d1d1d;
+}
+
 .card-details-box :is(h5, h6) {
     margin: 0;
+    padding: 0rem 1rem;
 }
 
 .card-details-box h5 {
@@ -123,19 +133,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 34px;
-    height: 34px;
-    margin-top: 2px;
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-top: 0.2rem;
 }
 
 .card-user-icon i {
-    margin-left: 1px;
-    margin-bottom: 2px;
+    margin-left: 0.1rem;
+    margin-bottom: 0.2rem;
 }
 
 .card-user-details p {
     margin: 0;
-    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 1.8rem;
 }
 
