@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="icon" href="images/car-service-96x96.png">
+    <title>Real Car Repairs</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <!-- Halfmoon -->
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars"
+      data-dm-shortcut-enabled="true"
+      data-sidebar-shortcut-enabled="true"
+      data-set-preferred-mode-onload="true">
+
+    <!-- Modal -->
+    <div class="modal" id="modal-1" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </a>
+                <h5 class="modal-title">Modal title</h5>
+                <p>
+                    This is the modal content. Almost any type of content can be presented to the user here.
+                </p>
+                <div class="text-right mt-20">
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="#" class="btn btn-primary" role="button">Okay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page wrapper -->
+    <div class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom"
+         data-sidebar-type="overlayed-all">
+
+        <!-- Toasts -->
+        <div class="sticky-alerts"></div>
+
+        <!-- Top navbar -->
+        <nav class="navbar pl-0">
+            <a role="button" class="nav-sidebar-btn toggle-sidebar-btn mini-sidebar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
+                <i class="fa fa-bars font-size-20" aria-hidden="true"></i><span class="sr-only">Toggle sidebar</span>
+            </a>
+
+            <a href="#" class="navbar-brand ml-0">
+                <img src="images/car-service-96x96.png" alt="real car repairs logo">
+                <span class="brand-text">Real Car Repairs</span>
+            </a>
+
+            <div class="dropdown ml-auto d-none d-sm-flex">
+                <button class="btn btn-primary align-items-center" data-toggle="dropdown" type="button" id="sign-in-dropdown-toggle-btn" aria-haspopup="true" aria-expanded="false">
+                    <span class="d-inline-block text-uppercase mr-15">Sign in</span>
+                    <i class="fa fa-user font-size-20" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right w-250 w-sm-350" aria-labelledby="sign-in-dropdown-toggle-btn">
+                    <div class="dropdown-content p-20">
+                        <form action="..." method="...">
+                            <div class="form-group">
+                                <label for="username" class="required">Username</label>
+                                <input type="text" name="username" class="form-control" placeholder="Username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="required">Password</label>
+                                <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+                            </div>
+                            <input class="btn btn-primary btn-block" type="submit" value="Sign in">
+                            <div class="text-right mt-10">
+                                <a href="#" class="hyperlink">Forgot password?</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item text-center">Don't have an account? Sign up</a>
+                </div>
+            </div>
+
+            <div class="dropdown ml-auto d-sm-none">
+                <button class="round-account-btn btn btn-square btn-primary rounded-circle" data-toggle="dropdown" type="button" id="sign-in-dropdown-toggle-btn" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user font-size-20" aria-hidden="true"></i><span class="sr-only">User account options</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right w-250 w-sm-350" aria-labelledby="sign-in-dropdown-toggle-btn">
+                    <div class="dropdown-content p-20">
+                        <form action="..." method="...">
+                            <div class="form-group">
+                                <label for="username" class="required">Username</label>
+                                <input type="text" name="username" class="form-control" placeholder="Username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="required">Password</label>
+                                <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+                            </div>
+                            <input class="btn btn-primary btn-block" type="submit" value="Sign in">
+                            <div class="text-right mt-10">
+                                <a href="#" class="hyperlink">Forgot password?</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item text-center">Don't have an account? Sign up</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- Sidebar overlay -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+
+                <a href="#" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-transparent"><i class="fa fa-home font-size-20" aria-hidden="true"></i></span>
+                    <span>Home</span>
+                </a>
+
+                <a href="#" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-transparent"><i class="fa fa-plus-square-o font-size-20" aria-hidden="true"></i></span>
+                    <span>Create</span>
+                </a>
+
+                <a href="#" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-transparent"><i class="fa fa-history font-size-20" aria-hidden="true"></i></span>
+                    <span>History</span>
+                </a>
+
+                <a href="#" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-transparent"><i class="fa fa-archive font-size-20" aria-hidden="true"></i></span>
+                    <span>Library</span>
+                </a>
+
+                <a href="#" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-transparent"><i class="fa fa-group font-size-20" aria-hidden="true"></i></span>
+                    <span>Following</span>
+                </a>
+
+                <div class="sidebar-divider"></div>
+
+                <a href="#" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-transparent"><i class="fa fa-keyboard-o font-size-20" aria-hidden="true"></i></span>
+                    <span>Keyboard Shortcuts</span>
+                </a>
+
+                <a href="#" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-transparent"><i class="fa fa-envelope-o font-size-20" aria-hidden="true"></i></span>
+                    <span>Send Feedback</span>
+                </a>
+
+                <a href="#" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-transparent"><i class="fa fa-question-circle-o font-size-20" aria-hidden="true"></i></span>
+                    <span>Help</span>
+                </a>
+
+                <a href="#" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon bg-transparent"><i class="fa fa-gear font-size-20" aria-hidden="true"></i></span>
+                    <span>Settings</span>
+                </a>
+
+                <div class="sidebar-divider"></div>
+
+                <div class="sidebar-content">
+                    <button class="darkmode-btn btn btn-block" type="button" aria-label="Toggle dark mode">
+                        <i class="fa fa-moon-o" aria-hidden="true"></i>
+                        <span class="ml-5">Dark Mode</span>
+                    </button>
+                </div>
+
+                <div class="sidebar-content">
+                    <a href="#" class="badge">About</a>
+                    <a href="#" class="badge">Contact</a>
+                    <a href="#" class="badge">Terms & Conditions</a>
+                    <a href="#" class="badge">Privacy Policy</a>
+                </div>
+
+                <div class="sidebar-footer sidebar-content font-size-12">
+                    <p class="m-0">&copy; 2022 Steven McGrew</p>
+                    <p class="m-0">Brand logo by Icons8 <a href="https://icons8.com/">https://icons8.com/</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+
+            <!-- Mini sidebar -->
+            <div class="mini-sidebar navbar d-none d-md-block h-full position-fixed p-0">
+                <a role="button" class="toggle-sidebar-btn mini-sidebar-btns badge p-0 d-flex flex-column align-items-center justify-content-center">
+                    <i class="fa fa-bars font-size-20" aria-hidden="true"></i><span class="sr-only">Toggle sidebar</span>
+                </a>
+                
+                <button class="creation-btns btn d-flex flex-column align-items-center justify-content-center">
+                    <i class="fa fa-plus font-size-20 text-primary" aria-hidden="true"></i>
+                    <span>Add Step</span>
+                </button>
+
+                <button class="creation-btns btn d-flex flex-column align-items-center justify-content-center">
+                    <i class="fa fa-save font-size-20 text-primary" aria-hidden="true"></i>
+                    <span>Save</span>
+                </button>
+
+                <button class="creation-btns btn d-flex flex-column align-items-center justify-content-center">
+                    <i class="fa fa-book font-size-20 text-primary" aria-hidden="true"></i>
+                    <span>Publish</span>
+                </button>
+
+                <button class="creation-btns btn d-flex flex-column align-items-center justify-content-center">
+                    <i class="fa fa-trash-o font-size-20 text-danger" aria-hidden="true"></i>
+                    <span>Delete</span>
+                </button>
+
+            </div>
+
+            <!-- Main content -->
+            <main>
+
+            </main>
+
+            <footer class="d-flex flex-column p-10 align-items-end">
+                <p>&copy; 2022 Steven McGrew</p>
+                <p>Brand logo by Icons8 <a href="https://icons8.com/">https://icons8.com/</a></p>
+            </footer>
+
+
+        </div>
+
+        <!-- Bottom navbar -->
+        <nav class="d-sm-none navbar navbar-fixed-bottom justify-content-around">
+
+        </nav>
+
+    </div>
+
+    <!-- Halfmoon JS -->
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
